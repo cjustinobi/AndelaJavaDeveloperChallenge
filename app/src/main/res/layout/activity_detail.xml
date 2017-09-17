@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/user_image_header"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:layout_marginLeft="10dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/user_image_header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/githublink"
+        android:text="github Profile Link"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/username"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/githublink"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+       android:layout_alignRight="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_share_black_24dp" />
+
+</RelativeLayout>
